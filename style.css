@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+
+h1 {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+  }
+
+th {
+    background-color: yellow;
+    color: black;
+}
+
+td:nth-child(1) {
+    background-color: aqua;
+}
+
+td:nth-child(2) {
+    background-color: black; 
+    color: white; 
+}
+
+td:nth-child(3) {
+    background-color: cadetblue;
+}
