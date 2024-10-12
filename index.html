@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjumlahan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Penjumlahan</h1>
+      <form id="additionForm">
+        <label for="number1">Bilangan pertama</label>
+        <input type="number" id="number1" required />
+
+        <label for="number2">Bilangan kedua</label>
+        <input type="number" id="number2" required />
+
+        <button type="button" onclick="addNumbers()">Jumlahkan</button>
+        <button type="reset" onclick="resetResult()">Reset</button>
+      </form>
+      <h2>Hasil: <span id="result">0</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
