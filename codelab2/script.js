@@ -1,11 +1,15 @@
-function addNumbers() {
-  const number1 = parseFloat(document.getElementById("number1").value);
-  const number2 = parseFloat(document.getElementById("number2").value);
-  const result = number1 + number2;
+document
+  .getElementById("formPendaftaran")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  document.getElementById("result").innerText = result;
-}
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var alamat = document.getElementById("alamat").value;
 
-function resetResult() {
-  document.getElementById("result").innerText = "0";
-}
+    if (nama === "" || email === "" || alamat === "") {
+      alert("Semua data harus diisi.");
+    } else {
+      alert("Pendaftaran berhasil!");
+    }
+  });
